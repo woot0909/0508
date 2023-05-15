@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nowDate = new Date();
+    
+        var year = nowDate.getFullYear();
+        var month = nowDate.getMonth();
+        var date = nowDate.getDate();
+        var day = nowDate.getDay();
+        var hour = nowDate.getHours();
+        var minute = nowDate.getMinutes();
+        var sec = nowDate.getSeconds();
+
+        var dayStr = "";
+        if(day == 0){
+            dayStr = "일";
+        }
+        else if(day == 1){
+            dayStr = "월";
+        }
+        else if(day == 2){
+            dayStr = "화";
+        }
+        else if(day == 3){
+            dayStr = "수";
+        }
+        else if(day == 4){
+            dayStr = "목";
+        }
+        else if(day == 5){
+            dayStr = "금";
+        }
+        else{
+            dayStr = "토";
+        }
+        alert(year + "년 " + month + "월 " +  date + "일 " + hour + ":" + minute + ":" + sec);
+    
+        if(hour < 12) {
+            alert("현재시각은 오전입니다.");
+        } else {
+            alert("현재시각은 오후입니다.");
+        }
+        
+    </script>
+</head>
+<body>
+</body>
+</html>
